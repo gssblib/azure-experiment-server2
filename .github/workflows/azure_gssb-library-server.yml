@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'gssb-library-server'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_58A0BCD6FA4B4651BD91CF96B90AD7D4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B99C204FE24145B3BBCFA7C1A6524B09 }}
           package: .
