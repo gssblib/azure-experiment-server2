@@ -1,7 +1,0 @@
-.fields {
-  column-count: 2;
-}
-
-.item-actions button + button {
-  margin-left: .5em;
-}

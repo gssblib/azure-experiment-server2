@@ -1,52 +1,9 @@
-# GSSB Library App
+# GSSB library server using express, ts-node, and mysql2
 
-This project contains the web app for the library of the GSSB.
+To start the server with nodemon (automatically restarting the server
+when a source file changes), call `npm start` which in turn will call
+`npm nodemon src/main.ts`.
 
-The application consists of an AngularJS client talking to a node.js server
-backed by a mysql database (using the schema of the previous version of the
-library application which was based on MS WebMatrix).
+To start without nodemon, call `npx ts-node src/main.ts`.
 
-
-## Directory Structure
-
-- client2: new client web application (angular 5+)
-- server: node.js server
-- labels: A label printer server written in Python
-- scripts: A directory with operational scripts, such as backups and E-mail
-  notifications.
-- sql: SQL schema and migration scripts for the DB
-- config: contains the config for the server and tools
-- doc: project documentation
-
-
-## Basic Setup
-
-All commands needed to build and run the application are maintained in a
-Makefile. You can see the list of available commands using `make help`.
-
-```
-$ make
-$ cp config/template.json.in config/prod.json
-$ editor config/prod.json
-$ make run-server
-$ make client-dev
-```
-
-You can now access the application via `http://localhost:4200`.
-
-
-### Installing node modules (with npm)
-
-```
-$ npm install grunt
-$ npm install grunt-bower-task --save-dev
-$ npm install express --save
-$ npm install express-session --save
-...
-```
-
-### More Documentation
-
-- [API](doc/api.md)
-- [Install](doc/install.md)
-- [Use-Cases](doc/use-cases.md)
+Set `NODE_CONFIG_DIR` and `NODE_ENV` to pick up the configuration.

@@ -1,7 +1,0 @@
-bs4
-captcha-solver
-lxml
-mysql-connector == 2.1.4
-pymysql
-rapidfuzz
-requests
